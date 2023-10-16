@@ -1,0 +1,141 @@
+body {
+    font-family: "Montserrat";
+    line-height: 150%;
+    color: #25282B;
+    background-color: #F8FCFF;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* -------------------------- */
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    margin: 42px 0 42px 0;
+}
+
+.nav {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin-right: 30px;
+}
+
+.nav__social {
+    margin-left: auto;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.social__item {
+    margin-right: 30px;
+}
+
+.nav__logo {
+    position: relative;
+    right: 35px;
+}
+
+/* ----------------------- */
+
+.hero {
+    color: #F8FCFF;
+    background-color: #3b3b3b;
+    height: 582px;
+    text-align: center;
+}
+
+.main__title {
+    padding: 120px 0 30px 0;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.hero__list {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero__list-item {
+    padding-top: 15px;
+}
+
+.hero__list-item::before {
+    /* content: url(//img/thumb-up.svg); */
+    content: '';
+    display: block;
+    position: absolute;
+    border: 2px solid black;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    height: 100%;
+}
+
+.hero__button {
+    padding-top: 40px;
+    align-items: center;
+}
+
+.button-1 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 288px;
+    padding: 18px 30px;
+    justify-content: center;
+    border-radius: 100px;
+    background: #D0DCE7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* --------------------------- */
+
+.shop {
+    padding-top: 120px;
+}
+
+.shop__sidebar {
+    display: inline-flex;
+    height: 1170px;
+    padding: 30px 108px 840px 30px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 30px 108px 840px 30px;
+    border: 2px solid #D0DCE7;
+    background: #F8FCFF;
+}
+
+.shop__list {
+    color: #25282B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.shop__list-item {
+    padding-bottom: 20px;
+}
+
+.shop__gallery {
+    display: grid;
+    grid-template-columns: 384px 180px 180px;
+    grid-gap: 24px;
+}
+
