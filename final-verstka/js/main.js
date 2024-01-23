@@ -35,7 +35,7 @@
     }
 
     btn.addEventListener('click', openModal)
-
+    
     modal.addEventListener('click', event => {
         const target = event.target
         if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
@@ -89,7 +89,6 @@
 
     accordionLists.forEach(el => {
 
-        // el.addEventListener('touchstart', (e) => {
         el.addEventListener('click', (e) => {
 
             const accordionList = e.currentTarget
@@ -98,24 +97,25 @@
 
             const accordionControl = e.target.closest('.accordion-list__control');
             if (!accordionControl) return
+            e.preventDefault()
             const accordionItem = accordionControl.parentElement;
             const accordionContent = accordionControl.nextElementSibling;
 
             if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
-                accordionOpenedItem.classList.remove('.accordion-list__item--opened');
+                accordionOpenedItem.classList.remove('accordion-list__item--opened');
                 accordionOpenedContent.style.maxHeight = null;
             }
             accordionItem.classList.toggle('accordion-list__item--opened');
 
             if (accordionItem.classList.contains('accordion-list__item--opened')) {
                 accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-            }
-            else {
+            } else {
                 accordionContent.style.maxHeight = null;
             }
-        })
-    })
-    // })
+
+        });
+
+    });
 
     // слайдер в галереи
 
@@ -175,6 +175,13 @@
             },
         }
     });
+
+    // маска телефона
+
+    const telInputs = document.querySelectorAll('input[type="tel"]');
+
+    const im = new Inputmask('+7 (999) 999-99-99');
+    im.mask(telInputs)
 
 })()
 
