@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+        local("Montserrat Regular"),
+        local("Montserrat-Regular"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        local("Montserrat Medium"),
+        local("Montserrat-Medium"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("../fonts/Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        local("Montserrat SemiBold"),
+        local("Montserrat-SemiBold"),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dela Gothic One";
+    src:
+        local("Dela Gothic One Regular"),
+        local("DelaGothicOne-Regular"),
+        url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"),
+        url("../fonts/DelaGothicOne-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.body {
+    background: #1e1e1e;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1280px;
+    margin: 0;
+    height: 100%;
+}
+
+.title {
+    font-family: "Dela Gothic One";
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 78px;
+    color: #ffffff;
+}
+
+.title_colortext {
+    color: #33b0aa;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 54px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    border-radius: 12px;
+}
+
+/* ------------------------- */
+
+.header {
+}
+
+.header__top {
+    background: #004643;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__top-inner {
+    display: flex;
+    margin-right: 100px;
+}
+
+.header__number {
+    margin-right: 10px;
+}
+
+.header__telephone {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-right: 48px;
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__item {
+}
+
+.header__link {
+}
+
+/* -------НАВИГАЦИЯ-------- */
+
+.nav {
+    background: #000908;
+    height: 80px;
+}
+
+.nav__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__inner-logo {
+    padding-top: 19px;
+}
+
+.nav__logo {
+    gap: 59px;
+}
+
+.nav__logo img {
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    color: #ffffffcc;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    gap: 42px;
+    padding-left: 59px;
+    margin-right: 100px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+}
+
+/* ---------HERO-------- */
+
+.hero {
+}
+
+.hero__inner {
+    padding: 0 100px;
+}
+
+.hero__bg {
+    background-image: url("../img/decor/main_bg.jpeg");
+    background-repeat: no-repeat;
+}
+
+.hero__content {
+    position: relative;
+}
+
+.hero__info {
+    padding-top: 61px;
+}
+
+.hero__title {
+    width: 551px;
+    height: 235px;
+    margin-bottom: 26px;
+}
+
+.hero__text {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 47px;
+}
+
+.hero-content__list {
+    
+}
+
+.hero-content__item {
+    padding-bottom: 16px;
+}
+
+.hero-content__text {
+    position: relative;
+    padding-left: 13px;
+}
+
+.hero-content__text::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 27px;
+    background: #28B0A9;
+    left: 0;
+}
+
+.heros__button {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 90px;
+}
+
+.hero__button {
+    box-shadow:
+        0px 11.6px 23.2px 0px #0823228f,
+        inset 0px 5.95px 5.95px 0px #36ece3,
+        inset 0px -5.95px 5.95px 0px #176561;
+    background: linear-gradient(180deg, #32ddd4, #1a746f 100%);
+}
+
+.hero__button-2 {
+    background: #3f3f3f;
+}
+
+.hero__cards {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    color: #ffffff;
+    margin: -52% 0 0 86%;
+}
+
+.hero__card {
+    width: 162px;
+    height: 129px;
+    border-radius: 24px;
+    backdrop-filter: blur(30px);
+    background: #ffffff33;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 142%;
+    margin-bottom: 6px;
+}
+
+.hero__card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 142%;
+    padding: 0 20px;
+}
+
+/* --------АКЦИИ----------- */
+
+.stock {
+    height: 765px;
+}
+
+.stock__bg {
+    background: url("../img/decor/stock.png");
+    height: 100%;
+}
+
+.stock__inner {
+    padding-top: 120px;
+    padding: 120px 100px 0;
+}
+
+.stock__nav {
+    
+}
+
+.stock__title {
+    padding-bottom: 29px;
+}
+
+.tab-controls {
+    display: flex;
+    gap: 8px;
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 41px;
+}
+
+.tab-controls__item {
+    display: flex;
+    width: auto;
+    height: 42px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px 10px 14px;
+    border-radius: 12px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tab-controls__link {
+}
+
+.tab-controls__link--active {
+}
