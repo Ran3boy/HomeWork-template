@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+</head>
+
+<body class="body">
+    <!-- Хедер -->
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="main__navigation" id="navMenu">
+                    <ul class="menu__list">
+                        <li class="list__item dropdown">
+                            <a href="#">Услуги</a>
+                            <ul class="dropdown__menu">
+                                <li><a href="#">Безопасность</a></li>
+                            </ul>
+                        </li>
+                        <li class="list__item"><a href="#">О компании</a></li>
+                        <li class="list__item"><a href="#">Поддержка</a></li>
+                        <li class="list__item dropdown">
+                            <a href="#">Новосибирск</a>
+                            <ul class="dropdown__menu">
+                                <li><a href="#">Санкт-Петербург</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contact">
+                    <a class="header__contact--item header__contact--item-1 btn" href="tel:+73832583300">+7 383
+                        258-33-00</a>
+                    <a class="header__contact--item header__contact--item-2 btn"
+                        href="https://wa.me/73832583300">Написать в WhatsApp</a>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__info">
+                        <div class="hero__part">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb__item"><a class="item-link" href="#">Главная</a><a
+                                        class="item-link" href="#">Безопасность бизнеса</a>
+                                    <a class="item-link" href="#">Обеспечение порядка в местах проведения массовых
+                                        мероприятий </a>
+                                </li>
+                            </ul>
+                            <h1 class="hero__title title">Обеспечение порядка <br> в местах проведения <br> массовых
+                                мероприятий
+                            </h1>
+                        </div>
+                        <div class="hero__part-2">
+                            <img class="hero__stadion" src="/images/project/stadion.png" alt="Стадион">
+                            <img class="hero__stadion-vector" src="/images/project/stadion-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <div class="services__info">
+                        <div class="service__block">
+                            <h3>Риски</h3>
+                            <p>В современный период времени проведение больших массовых мероприятий имеет особенно
+                                высокий
+                                риск
+                                опасности. Творческие встречи, концерты, праздники, спортивные соревнования, все это
+                                требует
+                                внимательного и тщательного контроля.</p>
+                        </div>
+                        <div class="service__block">
+                            <h3>Охрана</h3>
+                            <p>В случае обнаружения какой-либо опасности, каждому участнику встречи должна быть оказана
+                                незамедлительная помощь со стороны охранных структур. Равным образом и для
+                                предотвращения
+                                внешних
+                                угроз различного характера организация охраны массовых мероприятий является обязательным
+                                условием.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clients">
+                <div class="container">
+                    <h2 class="clients__title title">Наши клиенты</h2>
+                    <div class="client__slider">
+                        <div class="client__logos">
+                            <div class="client__logo logo-1"><img src="/images/project/tele.png" alt="Клиент 1"></div>
+                            <div class="client__logo logo-2"><img src="/images/project/continent.png" alt="Клиент 2">
+                            </div>
+                            <div class="client__logo logo-3"><img src="/images/project/stk.png" alt="Клиент 3"></div>
+                            <div class="client__logo"><img src="/images/project/gpn.png" alt="Клиент 4"></div>
+                            <div class="client__logo logo-5"><img src="/images/project/tele.png" alt="Клиент 5"></div>
+                        </div>
+                    </div>
+                    <div class="client__nav">
+                        <button class="prev"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.02344 11.3334L2.6901 7.00002L7.02344 2.66668L6.15677 0.93335L0.0901055 7.00002L6.15677 13.0667L7.02344 11.3334Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <button class="next"><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.976562 11.3334L5.3099 7.00002L0.976562 2.66668L1.84323 0.93335L7.90989 7.00002L1.84323 13.0667L0.976562 11.3334Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter__info">
+                        <form class="newsletter__forms" method="post" action="">
+                            <h2 class="newsletter__title title">Подпишитесь на рассылку</h2>
+                            <p>Чтобы узнавать о новых предложениях</p>
+                            <div class="newsletter__form">
+                                <input class="newsletter__input" type="email" name="email" placeholder="Email">
+                                <input class="newsletter__btn" type="submit"></input>
+                            </div>
+                        </form>
+                        <div class="newsletter__part2">
+                            <img class="newsletter__security" src="/images/project/cloud-security.png"
+                                alt="Безопасность">
+                            <img class="newsletter__security-vector" src="/images/project/cloud-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/main.js"></script>
+
+
+</html>
