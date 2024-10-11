@@ -340,26 +340,26 @@ body {
 }
 
 .service-item-1 {
-    background: url(/img/content/home.jpeg);
+    background: url(./img/content/home.jpeg);
     background-position-y: 48%;
     background-size: cover;
     display: block;
 }
 
 .service-item-2 {
-    background: url(/img/content/kvartira.jpeg);
+    background: url(./img/content/kvartira.jpeg);
     background-position-y: 48%;
     background-size: cover;
 }
 
 .service-item-3 {
-    background: url(/img/content/question.jpeg);
+    background: url(./img/content/question.jpeg);
     background-position-y: 48%;
     background-size: cover;
 }
 
 .service-item-4 {
-    background: url(/img/content/consulting.jpeg);
+    background: url(./img/content/consulting.jpeg);
     background-position-y: 48%;
     background-size: cover;
 }
